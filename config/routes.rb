@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'posts/index'
   get 'home/top'
   get 'home/about' => 'home#about'
   # root 'application#hello'
