@@ -30,4 +30,20 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'miss validation: %{errors}'
+        restrice_dependent_destroy:
+          has_one: '%{record} exist cant delete'
+          has_many: '%{record} exist cant delete'
+    
+    models:
+      task: task
+    attributes:
+      task:
+        id: ID
+        name: name
+        description: explanation
+        created_at: date_register
+        updated_at: date_update
